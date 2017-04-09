@@ -130,7 +130,8 @@
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+\newcommand{\cvnumberphoneA}[1]{\renewcommand{\cvnumberphoneA}{#1}}
+\newcommand{\cvnumberphoneB}[1]{\renewcommand{\cvnumberphoneB}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
@@ -201,19 +202,26 @@
               \begin{array}{l}
               {\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
               \end{array}
-              $} & \href{\cvlinkedin}{\hspace{16mm}/in/hsgadgil} \\
+              $} & \href{\cvlinkedin}{\hspace{16mm}/in/vitorjclima} \\
             }
-      \ifthenelse{\equal{\cvnumberphone}{}}{}{
+      \ifthenelse{\equal{\cvnumberphoneA}{}}{}{
             {$
               \begin{array}{l}
               \includegraphics[scale=0.1]{img/tel.png}
               \end{array}
               $} 
-            & \cvnumberphone\\}
+            & \cvnumberphoneA\\}
+       \ifthenelse{\equal{\cvnumberphoneB}{}}{}{
+            {$
+              \begin{array}{l}
+              \includegraphics[scale=0.1]{img/tel.png}
+              \end{array}
+              $} 
+            & \cvnumberphoneB\\}      
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
-              {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
+              {\href{\cvsite}{\includegraphics[scale=0.22]{img/github.png}}}
               \end{array}
               $} 
             & \cvsite\\}
@@ -236,7 +244,7 @@
         
         \profilesection{Interests}{3cm} 
         
-		\interests{{Data Mining \& Statistical Analysis/5},{Software Development/5.8},{Cryptography/4.3},{UI Design/4},{Cloud Computing/5}}
+		\interests{{Cloud Computing/5},{Software Development/5.8}}
         
         \interests
         
